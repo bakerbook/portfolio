@@ -30,3 +30,30 @@ body {
 a {
     @apply underline underline-offset-2;
 }
+
+/* Marquee animation used by MarqueeText component */
+@keyframes marquee-slide {
+    0% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(0);
+    }
+    60% {
+        transform: translateX(calc(-1 * var(--marquee-distance, 0px)));
+    }
+    64% {
+        transform: translateX(calc(-1 * var(--marquee-distance, 0px)));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.marquee-animate {
+    will-change: transform;
+    animation-name: marquee-slide;
+    animation-duration: var(--marquee-duration, 8s);
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
