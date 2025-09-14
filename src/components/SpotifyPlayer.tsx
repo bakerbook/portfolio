@@ -30,10 +30,10 @@ function SpotifyPlayer() {
     return (
         <div className="items-center">
             {song && (
-                <h1>currently playing on spotify:</h1>
+                <h1>Currently listening on Spotify:</h1>
             )}
             {!song && (
-                <h1>spotify currently offline</h1>
+                <h1>Not currently listening on Spotify</h1>
             )}
             <div className={`relative w-48 h-24 border border-black border-1 text-center flex flex-col items-center justify-center`}>
                 <span className="absolute top-1 right-1">
