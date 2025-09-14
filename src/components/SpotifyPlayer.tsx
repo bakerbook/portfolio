@@ -28,14 +28,14 @@ function SpotifyPlayer() {
     }, [])
 
     return (
-        <div className="items-center">
+        <div className="items-center w-full">
             {song && (
                 <h1>Currently listening on Spotify:</h1>
             )}
             {!song && (
                 <h1>Not currently listening on Spotify</h1>
             )}
-            <div className={`relative w-48 h-24 border border-black border-1 text-center flex flex-col items-center justify-center`}>
+            <div className={`relative w-full max-w-xs sm:max-w-sm md:w-48 h-24 border border-black border-1 text-center flex flex-col items-center justify-center`}>
                 <span className="absolute top-1 right-1">
                     <span className="relative flex h-4 w-4">
                         <span className={`animate-ping absolute inline-flex h-full w-full rounded-full ${song ? "bg-green-400" : "bg-red-400"} opacity-75`}></span>
@@ -43,10 +43,10 @@ function SpotifyPlayer() {
                     </span>
                 </span>
                 {song && (
-                    <div className="flex items-center gap-2 w-full">
+                    <div className="flex items-center gap-2 w-full px-2">
                         <div className="text-center w-full px-2">
-                            <MarqueeText text={song.name} wrapperClassName="w-full" textClassName="text-sm font-medium" />
-                            <MarqueeText text={song.artist} wrapperClassName="w-full" textClassName="text-xs text-gray-600" speedPxPerSec={40} />
+                            <MarqueeText text={song.name} wrapperClassName="w-full" textClassName="text-sm md:text-[13px] font-medium" />
+                            <MarqueeText text={song.artist} wrapperClassName="w-full" textClassName="text-xs md:text-[11px] text-gray-600" speedPxPerSec={40} />
                         </div>
                         {song.link && (
                             <a className="absolute bottom-1 right-1" href={song.link} target="_blank" rel="noopener noreferrer" aria-label="Open song">
