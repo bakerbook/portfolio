@@ -4,6 +4,7 @@ import SpotifyPlayer from "../components/SpotifyPlayer"
 
 import WorkExperience from "../components/WorkExperience"
 import Projects from "../components/Projects"
+import OtherExperience from "../components/OtherExperience"
 
 function Home() {
     return (
@@ -11,7 +12,7 @@ function Home() {
             <div className="mb-8">
                 <p className="mb-2 font-bold text-lg">Baker Book</p>
                 <p>
-                    18 y/o Computer Science Freshman at <span className="font-bold">UCLA</span>
+                    19 y/o Computer Science Freshman at <span className="font-bold">UCLA</span>
                 </p>
             </div>
             <div className="mb-8">
@@ -44,6 +45,7 @@ function Home() {
                 </div>
             </div>
             <WorkExperience />
+            <OtherExperience />
             <Projects />
             <div className="mt-auto mb-8">
                 <SpotifyPlayer />

@@ -8,6 +8,21 @@ function Projects() {
             <div className="flex flex-col md:flex-row md:justify-between items-start md:items-baseline gap-2 md:gap-0">
                 <div className="flex-1">
                     <a
+                        title="coming soon.."
+                        className="text-base font-semibold underline decoration-dashed cursor-not-allowed"
+                        target="_blank"
+                        referrerPolicy="origin"
+                    >
+                        Career Connections
+                    </a>
+                </div>
+                <div className="flex-1 text-base text-gray-600 leading-tight mt-1 md:mt-0 md:text-right md:ml-4">
+                    A platform I'm building to help students connect with alumni and mentors for career advice and networking opportunities.<br></br><span className="italic font-bold">Coming soon</span>.
+                </div>
+            </div>
+            <div className="flex flex-col md:flex-row md:justify-between items-start md:items-baseline gap-2 md:gap-0">
+                <div className="flex-1">
+                    <a
                         href="https://womble.ai"
                         className="text-base font-semibold underline decoration-dashed cursor-pointer"
                         target="_blank"
@@ -17,7 +32,7 @@ function Projects() {
                     </a>
                 </div>
                 <div className="flex-1 text-base text-gray-600 leading-tight mt-1 md:mt-0 md:text-right md:ml-4">
-                    A platform I'm building where AI agents can talk to each other and come up with solutions to whatever problems the user throws at them.<br></br>Full stack development with <span className="italic font-bold">React, Express, Tailwind, AWS, MongoDB, OpenAI API integration</span>.
+                    A platform I built where AI agents can talk to each other and come up with solutions to whatever problems the user throws at them.<br></br>Full stack development with <span className="italic font-bold">React, Express, Tailwind, AWS, MongoDB, OpenAI API integration</span>.
                 </div>
             </div>
             <div className="flex flex-col md:flex-row md:justify-between items-start md:items-baseline gap-2 md:gap-0">
