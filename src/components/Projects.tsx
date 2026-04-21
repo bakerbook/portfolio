@@ -5,7 +5,7 @@ function Projects() {
         <div className="mb-8 max-w-full md:max-w-[40vw] space-y-1">
         <p className="font-bold text-lg">Projects</p>
         <div className="flex flex-col space-y-4">
-            <div className="flex flex-col md:flex-row md:justify-between items-start md:items-baseline gap-2 md:gap-0">
+            {/* <div className="flex flex-col md:flex-row md:justify-between items-start md:items-baseline gap-2 md:gap-0">
                 <div className="flex-1">
                     <a
                         title="coming soon.."
@@ -19,7 +19,7 @@ function Projects() {
                 <div className="flex-1 text-base text-gray-600 leading-tight mt-1 md:mt-0 md:text-right md:ml-4">
                     A platform I'm building to help students connect with alumni and mentors for career advice and networking opportunities.<br></br><span className="italic font-bold">Coming soon</span>.
                 </div>
-            </div>
+            </div> */}
             <div className="flex flex-col md:flex-row md:justify-between items-start md:items-baseline gap-2 md:gap-0">
                 <div className="flex-1">
                     <a
