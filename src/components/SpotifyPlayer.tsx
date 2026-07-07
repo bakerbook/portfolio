@@ -24,7 +24,7 @@ function SpotifyPlayer() {
                 setSong(null)
             }
         }
-        // fetchNowPlaying()
+        fetchNowPlaying()
     }, [])
 
     return (
